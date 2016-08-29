@@ -1,0 +1,1 @@
+# Calculadora-Tratamento-Estatico-de-Medidas
