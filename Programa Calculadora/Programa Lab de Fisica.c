@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+//Calculadora: Tratamento Est√°tico de Medidas.
+
 int main () {
 
     double medida1, medida2, medida3, medida4, medida5;
@@ -34,7 +36,7 @@ int main () {
     desvio4 = medida4 - media1;
     desvio5 = medida5 - media1;
 
-    printf("Valor dos Devios Medios devio1: %f, desvio2: %f, desvio3: %f, desvio4: %f, desvio5: %f\n", desvio1, desvio2, desvio3, desvio4, desvio5);
+    printf("Valor dos Devios Medios\n devio1: %f\n desvio2: %f\n desvio3: %f\n desvio4: %f\n desvio5: %f\n", desvio1, desvio2, desvio3, desvio4, desvio5);
 
     desvio11 = pow(desvio1,2);
     desvio12 = pow(desvio2,2);
@@ -42,7 +44,7 @@ int main () {
     desvio14 = pow(desvio4,2);
     desvio15 = pow(desvio5,2);
 
-    printf("Valor dos Desvios Medios ao quadrado devio1: %f, desvio2: %f, desvio3: %f, desvio4: %f, desvio5: %f\n", desvio11, desvio12, desvio13, desvio14, desvio15);
+    printf("Valor dos Desvios Medios ao quadrado:\n devio1: %f\n  desvio2: %f\n desvio3: %f\n desvio4: %f\n desvio5: %f\n", desvio11, desvio12, desvio13, desvio14, desvio15);
 
     media2 = (desvio11 + desvio12 + desvio13 + desvio14 + desvio15)/ 5;
 
@@ -50,9 +52,9 @@ int main () {
 
     delta = sqrt(media2);
 
-    printf("Valor da Faixa de ConfianÁa: %f\n", delta);
+    printf("Valor da Faixa de Confian√ßa: %f\n", delta);
 
-    // faixa de confianÁa
+    // faixa de confian√ßa
 
     fconf1 = media1 + delta;
     fconf2 = media1 - delta;
@@ -75,3 +77,4 @@ int main () {
     return 0;
 
 }
+//Creator by: Felipe Oliveira Bueno de Camargo.
