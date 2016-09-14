@@ -52,7 +52,7 @@ int main () {
 
     delta = sqrt(media2);
 
-    printf("Valor da Faixa de Confiança: %f\n", delta);
+    printf("Valor da Raiz de Confiança: %f\n", delta);
 
     // faixa de confiança
 
@@ -83,8 +83,13 @@ int main () {
     printf("Resultado (%f +- %f)\n", media1, valorf);
 
     printf("Valor a considerar entre: %f e %f\n", vfinal1, vfinal2);
+    
+    
+
+    return 0;
+    
 
 
 
 }
-//Creator by: Felipe Oliveira Bueno de Camargo
+//Creator by: Felipe Oliveira Bueno de Camargo.
