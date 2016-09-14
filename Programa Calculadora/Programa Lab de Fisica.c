@@ -9,7 +9,7 @@ int main () {
     double medida1, medida2, medida3, medida4, medida5;
     double media1, media2, desvio1, desvio2, desvio3, desvio4, desvio5;
     double desvio11, desvio12, desvio13, desvio14, desvio15, delta;
-    double fconf1, fconf2, valorf, vfinal1, vfinal2;
+    double fconf1, fconf2, valorf, vfinal1, vfinal2, fundoescala1, fundoescala2;
 
     printf("Digite o Valor da Primeira Medida: ");
     scanf("%lf", &medida1);
@@ -61,9 +61,17 @@ int main () {
 
     printf("Valores de Confianca entre: %f e %f\n", fconf1, fconf2);
 
-    //Valores Finais
+    //Fundo de Escala do Instrumento
+    printf("Digite o Fundo de Escala: ");
+    scanf("%lf", &fundoescala1);
+    printf("Fundo de escala = %f\n", fundoescala1);
 
-    valorf = sqrt(pow(delta,2) + pow(0.005,2));
+    fundoescala2 = fundoescala1 / 2;
+
+    printf("Fundo de Escala a considerar: %lf\n ", fundoescala2);
+
+     //Valores Finais
+    valorf = sqrt(pow(delta,2) + pow(fundoescala2,2));
 
     printf("Valor da Raiz: %f\n", valorf);
 
@@ -72,9 +80,11 @@ int main () {
     vfinal1 = media1 + valorf;
     vfinal2 = media1 - valorf;
 
+    printf("Resultado (%f +- %f)\n", media1, valorf);
+
     printf("Valor a considerar entre: %f e %f\n", vfinal1, vfinal2);
 
-    return 0;
+
 
 }
-//Creator by: Felipe Oliveira Bueno de Camargo.
+//Creator by: Felipe Oliveira Bueno de Camargo
