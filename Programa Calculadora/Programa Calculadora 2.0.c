@@ -1,20 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @felipeobc
- Unwatch 1
-  Star 0
-  Fork 0 felipeobc/Calculadora-Tratamento-Estatico-de-Medidas
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathCalculadora-Tratamento-Estatico-de-Medidas/Programa%20Calculadora/Calculadora de fisica 2.0.c
-e0ba20f  a minute ago
-@felipeobc felipeobc Add files via upload
-1 contributor
-RawBlameHistory     
-69 lines (54 sloc)  1.96 KB
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
