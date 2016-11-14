@@ -3,7 +3,12 @@
 #include <math.h>
 #define N 50
 //Calculadora: Tratamento Estático de Medidas.
-
+struct Medidas{
+    int Numeros_Medidas, Indice;
+    double Valor_Medidas[N], Media1, Somas_Medidas;
+    double Desvio1, Desvio2, Desvio3, Media_Desvio,Delta;
+    double Fundo_Escala, Faixa_Final,Fundodeescala;
+    };
 int main () {
 
     int recomecar = 0;
@@ -11,10 +16,7 @@ int main () {
 do{
 
 
-   int Numeros_Medidas, Indice;
-   double Valor_Medidas[N], Media1, Somas_Medidas;
-   double Desvio1, Desvio2, Desvio3, Media_Desvio,Delta;
-   double Fundo_Escala, Faixa_Final,Fundodeescala;
+   struct Medidas;
 
    printf("\n");
    printf("CALCULADORA DE TRATAMENTO DE MEDIDAS!!\n\n");
