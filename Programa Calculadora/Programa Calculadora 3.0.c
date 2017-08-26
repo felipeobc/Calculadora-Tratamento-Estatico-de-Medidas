@@ -64,6 +64,8 @@ do{
 
     recomecar++;
     } while(recomecar == 1);
+    
+    printf("Obrigado !!");
     return 0;
 
 }
