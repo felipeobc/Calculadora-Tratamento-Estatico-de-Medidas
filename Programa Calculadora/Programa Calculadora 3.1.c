@@ -6,15 +6,11 @@ void Calcular (double *Medidas, int N, double *Med, double *Dev);
 
 //Calculadora: Tratamento Estático de Medidas.
 int main () {
-
-    int recomecar = 0;
-
-do{
-
-
-    int Numeros_Medidas;
+    int Numeros_Medidas, recomecar = 0;
     double *Valor_Medidas, Media, Desvio_Padrao;
     double Fundo_Escala=0, Faixa_Final, F;
+do{
+
     //Nuemero de Medidas
    printf("\n");
    printf("CALCULADORA DE TRATAMENTO DE MEDIDAS!!\n\n");
@@ -36,6 +32,7 @@ do{
 
    Calcular(Valor_Medidas, Numeros_Medidas, &Media, &Desvio_Padrao);
 
+    printf("\n");
     printf("Valor da Media = %f\n\n", Media);
     printf("\n");
 
@@ -46,12 +43,8 @@ do{
     printf("Valor a Considerar entre: %f +- %f\n\n", Media, Faixa_Final);
     free(Valor_Medidas);
 
-    printf("Deja Fazer um Novo Calculo?\n");
-    printf("(0)Sim!\n(1)Nao!\n");
-    printf("Digite uma opcao: ");
-    scanf("%d", &recomecar);
+    recomecar = Menu();
 
-    recomecar++;
     } while(recomecar == 1);
 
     printf("Obrigado !!\n\n");
@@ -83,3 +76,19 @@ void Calcular (double *Medidas, int N, double *Med, double *Dev){
     *Dev = sqrt(*Dev / N);
 
 }
+int Menu(){
+    int R;
+    volta:
+    printf("Deja Fazer um Novo Calculo?\n");
+    printf("(1)Sim!\n(2)Nao!\n");
+    printf("Digite uma opcao: ");
+    scanf("%d", &R);
+
+    if((R != 1) && (R != 2)){
+            printf("Numero incorreto !!\n");
+            printf("Por Favor escolha (1) ou (2)!!\n\n");
+            goto volta;
+        }
+    return R;
+}
+
